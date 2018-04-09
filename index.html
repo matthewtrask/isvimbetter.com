@@ -11,6 +11,15 @@
       body {
         font-family: 'Tajawal', sans-serif;
       }
+      q {
+        quotes: '"' '"' "'" "'";
+      }
+      q::before {
+        content: open-quote;
+      }
+      q:after {
+        content: close-quote;
+      }
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117096832-1"></script>
