@@ -21,11 +21,40 @@
 
     gtag('config', 'UA-117096832-1');
   </script>
+  <script>
+    var greatOracleAnswers = [
+      "It is certain",
+      "It is decidedly so",
+      "Without a doubt",
+      "Yes definitely",
+      "You may rely on it",
+      "As I see it, yes",
+      "Most likely",
+      "Outlook good",
+      "Yes",
+      "Signs point to yes",
+      "Reply hazy try again",
+      "Ask again later",
+      "Better not tell you now",
+      "Cannot predict now",
+      "Concentrate and ask again",
+      "Don't count on it",
+      "My reply is no",
+      "My sources say no",
+      "Outlook not so good",
+      "Very doubtful"
+    ];
+
+    var getAnswerFromGreatOracle = function() {
+      return greatOracleAnswers[Math.floor(Math.random() * greatOracleAnswers.length)];
+    };
+  </script>
 
 </head>
 <body class="bg-green-darker">
   <div class="container mx-auto pt-8">
       <h3 class="text-white text-5xl tracking-wide">Is Vim Better?</h3>
+      <h5 class="text-white text-3xl tracking-wide font-light">A random passerby might tell you, <q><script>document.write(this.getAnswerFromGreatOracle());</script>.</q></h5>
       <h5 class="text-white text-3xl tracking-wide font-light">I mean, you do you tiger. If looking at a terminal all day makes you happy then knock yourself out.
         Made with love while writing this with Vim (I'm not a vim user, the struggle is real).
       </h5>
